@@ -1,0 +1,127 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
++media-breakpoint-down(xl)
++media-breakpoint-down(lg)
++media-breakpoint-down(md)
+	.image__title
+		h2
+			font-size: 50px
+	.image__claim
+		h3
+			font-size: 25px
+	.comment
+		margin-left: 20px
+		width: 25%
+		padding-top: 5px
+		&__image
+			margin-top: -5px
+			margin-right: 3px
+		p
+			line-height: 12px
+	.sidebar
+		height: auto
+		&__h
+			margin-bottom: 0
+			font-size: 19px
+		&__autor
+			padding-top: 15px
+			padding-bottom: 9px
+			p
+				line-height: 13px
+		&__posts
+			padding-top: 9px
+			padding-bottom: 9px
+		&__currency
+			padding-top: 9px
+	.tpost
+		height: auto
+	.related
+		&__h
+			font-size: 9px
+		&__text
+			display: flex
+			width: 100%
+	.blockpost
+		padding-top: 15px
+		.sidebar__h
+			height: 18px
+			font-size: 15px
+			line-height: 18px
+		&__text
+			line-height: 14px
++media-breakpoint-down(sm)
+	.sidebar
+		display: none
+	.logo
+		h1
+			font-size: 25px
+	.image
+		&__title
+			padding: 7px 15px
+			height: auto
+			width: auto
+			h2
+				font-size: 40px
+		&__claim
+			h3
+				font-size: 19px
+		.comment
+			width: 30%
+			margin-bottom: 10px
+			margin-top: 5px
+		.image
+			height: 600px
+			&__comments
+				height: auto
+				.col
+					flex-wrap: wrap
+	.main__image
+		height: 500px
+	#map
+		height: 300px
++media-breakpoint-down(xs)
+	.header
+		&__logo
+			h1
+				text-align: left
+	.nav
+		li
+			margin: 0
+			a
+				padding: 5px 12px
+	.image
+		height: 200px
+		&__claim
+			padding: 0 5px
+			height: 20px
+			h3
+				font-size: 11px
+				line-height: 20px
+				height: 20px
+	.comment
+		display: none
+	.b-footer
+		.container
+			display: none
+	.post-h
+		font-size: 20px
+		text-align: center
+	.tpost
+		&__img
+			flex-direction: column
+			margin-right: 7px
+			margin-left: 10px
+			.circle
+				margin-top: 10px
+	.blockpost
+		width: 90%
+/*==========  Mobile First  ==========*/
+
++media-breakpoint-up(xs)
++media-breakpoint-up(sm)
++media-breakpoint-up(md)
++media-breakpoint-up(lg)
++media-breakpoint-up(xl)
